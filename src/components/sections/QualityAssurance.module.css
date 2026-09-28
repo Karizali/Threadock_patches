@@ -1,0 +1,131 @@
+.section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.88)), url('../../assets/bg_img_5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: minmax(240px, 320px) 1fr;
+  gap: var(--space-section);
+  align-items: center;
+  padding: var(--space-section);
+  border-radius: var(--radius-lg);
+  border: 3px solid var(--color-border-default);
+  background: color-mix(in srgb, var(--color-surface-base) 55%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-text-inverse) 25%, transparent), var(--shadow-2);
+}
+
+.image {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-default);
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: var(--color-text-inverse);
+  letter-spacing: 0.2em;
+  margin-bottom: var(--space-6);
+}
+
+.heading {
+  color: var(--color-text-on-dark);
+  margin-bottom: var(--space-block);
+}
+
+.lede {
+  color: var(--color-text-secondary);
+  max-width: 62ch;
+  margin-bottom: var(--space-section);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.feature {
+  position: relative;
+  padding-inline: var(--space-block);
+}
+
+.feature:first-child {
+  padding-left: 0;
+}
+
+.feature:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  inset-block: var(--space-4);
+  left: 0;
+  width: 1px;
+  background: var(--color-border-default);
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: var(--space-block);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--color-text-inverse) 18%, transparent);
+  color: var(--color-text-inverse);
+}
+
+.icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.featureTitle {
+  color: var(--color-text-on-dark);
+  margin-bottom: var(--space-5);
+}
+
+.featureDescription {
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 900px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .image {
+    max-width: 320px;
+    margin-inline: auto;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-section) var(--space-block);
+  }
+
+  .feature {
+    padding-inline: 0;
+  }
+
+  .feature:not(:first-child)::before {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .card {
+    padding: var(--space-block);
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}

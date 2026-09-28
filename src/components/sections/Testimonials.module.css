@@ -1,0 +1,61 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-block);
+}
+
+@media (max-width: 720px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--color-surface-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-block);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.quote {
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-normal);
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: var(--color-surface-strong);
+  color: var(--color-on-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-black);
+  font-size: var(--font-size-sm);
+  flex-shrink: 0;
+}
+
+.name {
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+}
+
+.role {
+  color: var(--color-text-tertiary);
+  font-size: var(--font-size-xs);
+}
+
+.stars {
+  color: var(--color-text-inverse);
+  font-size: var(--font-size-sm);
+}

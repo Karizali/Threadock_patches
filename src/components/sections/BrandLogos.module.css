@@ -1,0 +1,13 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-block);
+}
+
+.name {
+  color: var(--color-text-on-dark);
+  opacity: 0.6;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.02em;
+}

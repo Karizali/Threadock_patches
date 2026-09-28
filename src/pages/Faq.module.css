@@ -1,0 +1,4 @@
+.body {
+  padding-block: var(--space-section);
+  max-width: 760px;
+}

@@ -1,0 +1,33 @@
+.body {
+  padding-block: var(--space-section);
+}
+
+.productOverview {
+  display: grid;
+  grid-template-columns: minmax(0, 400px) 1fr;
+  align-items: center;
+  gap: var(--space-section);
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.related {
+  padding-top: var(--space-section);
+  margin-top: var(--space-section);
+  border-top: 1px solid var(--color-border-default);
+}
+
+.relatedTitle {
+  color: var(--color-text-on-dark);
+  margin-bottom: var(--space-block);
+}
+
+@media (max-width: 800px) {
+  .productOverview {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,22 @@
+.wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-block);
+  margin-bottom: var(--space-block);
+  flex-wrap: wrap;
+}
+
+.eyebrow {
+  color: var(--color-text-inverse);
+  display: block;
+  margin-bottom: var(--space-4);
+}
+
+.heading {
+  color: var(--color-text-on-dark);
+}
+
+.headingOnLight {
+  color: var(--color-text-secondary);
+}

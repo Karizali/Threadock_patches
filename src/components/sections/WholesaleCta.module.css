@@ -1,0 +1,21 @@
+.banner {
+  background: var(--color-surface-strong);
+  border-radius: var(--radius-lg);
+  padding: var(--space-section);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-block);
+  flex-wrap: wrap;
+}
+
+.heading {
+  color: var(--color-on-accent);
+  margin-bottom: var(--space-5);
+}
+
+.copy {
+  color: var(--color-on-accent);
+  opacity: 0.9;
+  max-width: 46ch;
+}

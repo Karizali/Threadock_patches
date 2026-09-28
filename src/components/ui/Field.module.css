@@ -1,0 +1,64 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-on-dark);
+}
+
+.labelOnLight {
+  color: var(--color-text-secondary);
+}
+
+.control {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  background: var(--color-surface-card);
+  border: 1px solid var(--color-border-on-light);
+  border-radius: var(--radius-sm);
+  padding: var(--space-6) var(--space-7);
+  transition: border-color var(--motion-instant) var(--motion-ease), box-shadow var(--motion-instant) var(--motion-ease);
+}
+
+.control::placeholder {
+  color: var(--color-text-tertiary);
+  opacity: 1;
+}
+
+.control:hover {
+  border-color: var(--color-text-inverse);
+}
+
+.control:focus-visible {
+  outline: none;
+  border-color: var(--color-text-inverse);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-text-inverse) 25%, transparent);
+}
+
+.control:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.control.error {
+  border-color: var(--color-danger);
+}
+
+.hint {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+}
+
+.errorText {
+  font-size: var(--font-size-xs);
+  color: var(--color-danger);
+}
+
+textarea.control {
+  resize: vertical;
+  min-height: calc(var(--space-8) * 6);
+}
