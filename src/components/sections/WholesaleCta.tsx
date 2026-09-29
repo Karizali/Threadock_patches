@@ -1,21 +1,23 @@
 import { Link } from 'react-router-dom';
-import { Button } from '../ui/Button';
+import wholesaleImage from '../../assets/bg_img_10.jpg';
 import styles from './WholesaleCta.module.css';
 
 export function WholesaleCta() {
   return (
     <section className="section-tight">
       <div className="page-container">
-        <div className={styles.banner}>
-          <div>
-            <h2 className={`${styles.heading} text-h3`}>Wholesale &amp; bulk orders</h2>
-            <p className={`${styles.copy} text-body`}>
-              Tiered pricing at 100, 500, and 1,000 units, with dedicated account support for repeat orders.
+        <div className={styles.banner} style={{ backgroundImage: `url(${wholesaleImage})` }}>
+          <div className={styles.overlay} />
+          <div className={styles.content}>
+            <span className={`${styles.eyebrow} text-micro`}>Premium manufacturing</span>
+            <h2 className={`${styles.heading} text-hero`}>Wholesale Bulk Orders</h2>
+            <p className={`${styles.copy} text-body-lg`}>
+              Get high-quality custom branding solutions at competitive wholesale prices.
             </p>
+            <Link to="/contact" className={styles.cta}>
+              Get a quote <span aria-hidden="true">&rarr;</span>
+            </Link>
           </div>
-          <Link to="/contact">
-            <Button variant="secondary">Request wholesale pricing</Button>
-          </Link>
         </div>
       </div>
     </section>

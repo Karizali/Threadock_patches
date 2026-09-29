@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Fernwood Co-op patch logo">
+  <circle cx="80" cy="80" r="78" fill="#7fae4f"/>
+  <circle cx="80" cy="80" r="68" fill="#16281c"/>
+  <circle cx="80" cy="80" r="62" fill="none" stroke="#eef6e4" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="2 4"/>
+  <path d="M80 40 L96 66 L88 66 L100 86 L90 86 L104 106 L56 106 L70 86 L60 86 L72 66 L64 66 Z" fill="#eef6e4"/>
+  <rect x="76" y="106" width="8" height="10" fill="#eef6e4"/>
+  <text x="80" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#eef6e4">FERNWOOD CO-OP</text>
+</svg>

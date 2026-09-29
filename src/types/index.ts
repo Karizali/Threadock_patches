@@ -32,6 +32,7 @@ export interface FaqItem {
 export interface BrandLogo {
   id: string;
   name: string;
+  logo: string;
 }
 
 export interface Stat {

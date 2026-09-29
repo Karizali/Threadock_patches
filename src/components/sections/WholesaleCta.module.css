@@ -1,21 +1,89 @@
 .banner {
-  background: var(--color-surface-strong);
+  position: relative;
   border-radius: var(--radius-lg);
-  padding: var(--space-section);
+  overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: var(--space-block);
-  flex-wrap: wrap;
+  min-height: 460px;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    color-mix(in srgb, var(--color-surface-base) 88%, black) 0%,
+    color-mix(in srgb, var(--color-surface-base) 55%, transparent) 45%,
+    transparent 80%
+  );
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 520px;
+  padding: var(--space-section) var(--space-section);
+}
+
+.eyebrow {
+  display: block;
+  color: var(--color-text-inverse);
+  letter-spacing: 0.14em;
+  margin-bottom: var(--space-7);
 }
 
 .heading {
   color: var(--color-on-accent);
-  margin-bottom: var(--space-5);
+  margin-bottom: var(--space-6);
 }
 
 .copy {
+  color: var(--color-text-on-dark);
+  max-width: 42ch;
+  margin-bottom: var(--space-block);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-5);
+  padding: var(--space-6) var(--space-8);
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--color-on-accent) 60%, transparent);
   color: var(--color-on-accent);
-  opacity: 0.9;
-  max-width: 46ch;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-base);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background var(--motion-instant) var(--motion-ease),
+    color var(--motion-instant) var(--motion-ease),
+    border-color var(--motion-instant) var(--motion-ease);
+}
+
+.cta:hover {
+  background: var(--color-on-accent);
+  color: var(--color-surface-base);
+  border-color: var(--color-on-accent);
+}
+
+@media (max-width: 720px) {
+  .banner {
+    min-height: 380px;
+  }
+
+  .content {
+    padding: var(--space-section-lg) var(--space-block);
+    max-width: 100%;
+  }
+
+  .overlay {
+    background: linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--color-surface-base) 92%, black) 0%,
+      color-mix(in srgb, var(--color-surface-base) 60%, transparent) 60%,
+      color-mix(in srgb, var(--color-surface-base) 40%, transparent) 100%
+    );
+  }
 }

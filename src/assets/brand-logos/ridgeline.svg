@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Ridgeline patch logo">
+  <circle cx="80" cy="80" r="78" fill="#d97b3f"/>
+  <circle cx="80" cy="80" r="68" fill="#1f2a24"/>
+  <circle cx="80" cy="80" r="62" fill="none" stroke="#f4ead1" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="2 4"/>
+  <path d="M35 92 L58 58 L70 74 L82 50 L112 92 Z" fill="#f4ead1"/>
+  <path d="M78 62 L82 50 L86 62 Z" fill="#d97b3f"/>
+  <text x="80" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1.5" fill="#f4ead1">RIDGELINE</text>
+</svg>

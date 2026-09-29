@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Northbay patch logo">
+  <circle cx="80" cy="80" r="78" fill="#3fa9d9"/>
+  <circle cx="80" cy="80" r="68" fill="#0f2438"/>
+  <circle cx="80" cy="80" r="62" fill="none" stroke="#eaf6fc" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="2 4"/>
+  <path d="M32 66 Q46 54 60 66 T88 66 T116 66" fill="none" stroke="#eaf6fc" stroke-width="5" stroke-linecap="round"/>
+  <path d="M32 82 Q46 70 60 82 T88 82 T116 82" fill="none" stroke="#eaf6fc" stroke-width="5" stroke-linecap="round"/>
+  <text x="80" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1.5" fill="#eaf6fc">NORTHBAY</text>
+</svg>

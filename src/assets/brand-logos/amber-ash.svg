@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Amber and Ash patch logo">
+  <circle cx="80" cy="80" r="78" fill="#e08a2c"/>
+  <circle cx="80" cy="80" r="68" fill="#2a1810"/>
+  <circle cx="80" cy="80" r="62" fill="none" stroke="#fbe6cd" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="2 4"/>
+  <path d="M80 48 C64 66, 62 80, 74 92 C68 88, 66 96, 72 102 C58 96, 54 76, 68 58 C68 70, 74 70, 74 62 C82 68, 96 78, 92 96 C104 88, 106 68, 80 48 Z" fill="#fbe6cd"/>
+  <text x="80" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.2" fill="#fbe6cd">AMBER &amp; ASH</text>
+</svg>
