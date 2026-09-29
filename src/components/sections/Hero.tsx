@@ -1,16 +1,18 @@
-import type { ReactNode } from 'react';
+import type { CSSProperties, ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../ui/Button';
 import { TickerBar } from '../ui/TickerBar';
 import styles from './Hero.module.css';
 
-const chips = ['EP', 'DT', 'KC', 'WP', 'PB', 'CH'];
+const defaultChips = ['EP', 'DT', 'KC', 'WP', 'PB', 'CH'];
 
 interface HeroProps {
   eyebrow?: string;
   title?: string;
   description?: string;
   cta?: ReactNode;
+  backgroundImage?: string;
+  chips?: string[];
 }
 
 const defaultActions = (
@@ -29,9 +31,13 @@ export function Hero({
   title = 'Your vision, stitched with precision.',
   description = 'From embroidered patches to full apparel runs, we take your artwork from proof to production without the back-and-forth.',
   cta = defaultActions,
+  backgroundImage,
+  chips = defaultChips,
 }: HeroProps) {
+  const style = backgroundImage ? ({ '--hero-image': `url(${backgroundImage})` } as CSSProperties) : undefined;
+
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} style={style}>
       <div className="page-container">
         <div className={styles.inner}>
           <div>

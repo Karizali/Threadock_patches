@@ -1,4 +1,7 @@
 import { PageIntro } from '../components/sections/PageIntro';
+import { CherishedCustomers } from '../components/sections/CherishedCustomers';
+import { CoreValues } from '../components/sections/CoreValues';
+import { QualityGuaranteeBanner } from '../components/sections/QualityGuaranteeBanner';
 import styles from './About.module.css';
 
 const stats = [
@@ -38,6 +41,9 @@ export default function About() {
           </p>
         </div>
       </div>
+      <CherishedCustomers />
+      <CoreValues />
+      <QualityGuaranteeBanner />
     </>
   );
 }

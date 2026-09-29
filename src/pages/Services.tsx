@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { PageIntro } from '../components/sections/PageIntro';
+import { DigitizingRequestForm } from '../components/sections/DigitizingRequestForm';
 import { Button } from '../components/ui/Button';
 import styles from './Services.module.css';
 
@@ -62,6 +63,7 @@ export default function Services() {
           ))}
         </div>
       </div>
+      <DigitizingRequestForm />
     </>
   );
 }

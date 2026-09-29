@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { productCategories } from '../../data/navigation';
+import { categorySlug } from '../../data/categoryContent';
 import { FacebookIcon, InstagramIcon, MastercardIcon, PaypalIcon, PinterestIcon, VisaIcon } from './BrandIcons';
 import styles from './Footer.module.css';
 
@@ -50,7 +51,7 @@ export function Footer() {
             <ul className={styles.linkList}>
               {productCategories.map((category) => (
                 <li key={category}>
-                  <Link to={`/products?category=${encodeURIComponent(category)}`}>{category}</Link>
+                  <Link to={`/products/category/${categorySlug(category)}`}>{category}</Link>
                 </li>
               ))}
             </ul>

@@ -1,0 +1,195 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--space-section);
+  padding-block: var(--space-block);
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel {
+  background-image: radial-gradient(
+      120% 140% at 30% 0%,
+      color-mix(in srgb, var(--color-navy) 55%, black) 0%,
+      color-mix(in srgb, var(--color-navy) 30%, black) 55%,
+      black 100%
+    );
+  border: 1px solid color-mix(in srgb, var(--color-gray) 30%, transparent);
+  border-radius: var(--radius-lg);
+  padding: var(--space-block);
+}
+
+.tabs {
+  display: flex;
+  background: var(--color-text-inverse);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2);
+  gap: var(--space-2);
+  margin-bottom: var(--space-block);
+}
+
+.tab {
+  flex: 1;
+  padding: var(--space-6) var(--space-7);
+  border-radius: calc(var(--radius-sm) - 2px);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-base);
+  font-size: var(--font-size-lg);
+  color: var(--color-navy);
+  background: transparent;
+}
+
+.tabActive {
+  background: var(--color-surface-strong);
+  color: var(--color-on-accent);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+.input,
+.textarea {
+  width: 100%;
+  background: color-mix(in srgb, var(--color-navy) 35%, black);
+  border: 1px solid color-mix(in srgb, var(--color-gray) 35%, transparent);
+  border-radius: var(--radius-sm);
+  padding: var(--space-6) var(--space-7);
+  color: var(--color-text-on-dark);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-md);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--color-text-tertiary);
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.label {
+  color: var(--color-text-on-dark);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-md);
+}
+
+.formatGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+@media (max-width: 480px) {
+  .formatGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.formatOption {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  border: 1px solid color-mix(in srgb, var(--color-gray) 35%, transparent);
+  border-radius: var(--radius-sm);
+  padding: var(--space-5) var(--space-6);
+  color: var(--color-text-on-dark);
+  font-size: var(--font-size-sm);
+}
+
+.formatOption input {
+  accent-color: var(--color-surface-strong);
+}
+
+.captcha {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  background: var(--color-text-inverse);
+  border: 1px solid var(--color-border-on-light);
+  border-radius: var(--radius-sm);
+  padding: var(--space-6) var(--space-7);
+  color: var(--color-navy);
+  font-size: var(--font-size-md);
+}
+
+.captchaBadge {
+  margin-left: auto;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+}
+
+.success {
+  color: var(--color-success);
+  font-size: var(--font-size-sm);
+}
+
+.errorText {
+  color: var(--color-danger);
+  font-size: var(--font-size-sm);
+}
+
+.submit {
+  border: 2px solid var(--color-text-on-dark);
+  background: transparent;
+  color: var(--color-text-on-dark);
+  border-radius: var(--radius-lg);
+  padding: var(--space-7) var(--space-8);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-base);
+  font-size: var(--font-size-lg);
+  transition: background var(--motion-instant) var(--motion-ease), color var(--motion-instant) var(--motion-ease);
+}
+
+.submit:hover:not(:disabled) {
+  background: var(--color-surface-strong);
+  color: var(--color-on-accent);
+  border-color: var(--color-surface-strong);
+}
+
+.submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-block);
+}
+
+.badge {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-surface-strong), var(--color-surface-raised));
+  border: 1px solid var(--color-border-default);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-on-accent);
+  font-weight: var(--font-weight-black);
+  font-size: var(--font-size-hero);
+}
+
+.copy {
+  color: var(--color-text-secondary);
+  opacity: 0.85;
+  max-width: 42ch;
+}

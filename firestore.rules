@@ -1,0 +1,19 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /formSubmissions/{submissionId} {
+      // Anyone can submit the Home / Contact request forms.
+      allow create: if true;
+      // Only signed-in admins can view or manage submissions.
+      allow read, update, delete: if request.auth != null;
+    }
+
+    match /serviceRequests/{submissionId} {
+      // Anyone can submit the Services page digitizing / vector art form.
+      allow create: if true;
+      // Only signed-in admins can view or manage submissions.
+      allow read, update, delete: if request.auth != null;
+    }
+  }
+}

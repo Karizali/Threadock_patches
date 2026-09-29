@@ -1,0 +1,28 @@
+.wrap {
+  text-align: center;
+  padding-block: var(--space-block);
+}
+
+.wrap + .wrap {
+  border-top: 1px solid var(--color-border-default);
+}
+
+.title {
+  color: var(--color-text-on-dark);
+  margin-bottom: var(--space-4);
+}
+
+.description {
+  color: var(--color-text-secondary);
+  opacity: 0.85;
+  max-width: 56ch;
+  margin-inline: auto;
+  margin-bottom: var(--space-block);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-block);
+}

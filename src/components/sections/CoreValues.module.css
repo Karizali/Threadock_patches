@@ -1,0 +1,77 @@
+.section {
+  background-image: linear-gradient(
+      180deg,
+      color-mix(in srgb, black 55%, transparent) 0%,
+      color-mix(in srgb, black 35%, transparent) 40%,
+      color-mix(in srgb, black 70%, transparent) 100%
+    ),
+    url('../../assets/bg_img_6.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-block: var(--space-section-lg);
+}
+
+.heading {
+  text-align: center;
+  max-width: 60ch;
+  margin-inline: auto;
+  margin-bottom: var(--space-block);
+}
+
+.title {
+  color: var(--color-text-on-dark);
+  margin-bottom: var(--space-6);
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+  opacity: 0.9;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-block);
+  margin-top: var(--space-section);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-6);
+  background: color-mix(in srgb, var(--color-surface-card) 55%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-gray) 25%, transparent);
+  border-radius: var(--radius-lg);
+  padding: var(--space-section) var(--space-block);
+  backdrop-filter: blur(6px);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--color-surface-strong) 70%, transparent);
+  font-size: var(--font-size-hero);
+  line-height: 1;
+}
+
+.cardTitle {
+  color: var(--color-text-on-dark);
+}
+
+.cardDescription {
+  color: var(--color-text-secondary);
+  opacity: 0.85;
+}

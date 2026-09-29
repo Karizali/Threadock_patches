@@ -3,6 +3,7 @@ export interface Product {
   slug: string;
   name: string;
   category: string;
+  type: string;
   description: string;
   monogram: string;
   bestseller?: boolean;

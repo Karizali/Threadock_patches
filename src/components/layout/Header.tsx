@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { primaryNav, productCategories } from '../../data/navigation';
+import { categorySlug } from '../../data/categoryContent';
 import styles from './Header.module.css';
 
 export function Header() {
@@ -45,7 +46,7 @@ export function Header() {
                     {productCategories.map((category) => (
                       <Link
                         key={category}
-                        to={`/products?category=${encodeURIComponent(category)}`}
+                        to={`/products/category/${categorySlug(category)}`}
                         className={styles.dropdownLink}
                         onClick={() => setMobileOpen(false)}
                       >

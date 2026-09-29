@@ -1,18 +1,10 @@
-import { useState, type FormEvent } from 'react';
-import { productCategories } from '../data/navigation';
-import { Button } from '../components/ui/Button';
+import { RequestForm } from '../components/forms/RequestForm';
 import { PageIntro } from '../components/sections/PageIntro';
+import { CustomerSatisfactionBanner } from '../components/sections/CustomerSatisfactionBanner';
+import { PatchQualityShowcase } from '../components/sections/PatchQualityShowcase';
 import styles from './Contact.module.css';
 
 export default function Contact() {
-  const [submitted, setSubmitted] = useState(false);
-  const [fileName, setFileName] = useState('');
-
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setSubmitted(true);
-  };
-
   return (
     <>
       <PageIntro
@@ -62,86 +54,12 @@ export default function Contact() {
               </div>
             </div>
 
-            <form className={styles.form} onSubmit={handleSubmit}>
-            <div className={styles.formGrid}>
-              <label className={styles.field}>
-                <span className={styles.visuallyHidden}>Width</span>
-                <input name="width" type="number" min="0" step="any" placeholder="Width" />
-              </label>
-              <label className={styles.field}>
-                <span className={styles.visuallyHidden}>Height</span>
-                <input name="height" type="number" min="0" step="any" placeholder="Height" />
-              </label>
-              <label className={styles.field}>
-                <span className={styles.visuallyHidden}>Product type</span>
-                <select name="category" defaultValue="" required>
-                  <option value="" disabled>Select Product Type</option>
-                  {productCategories.map((category) => <option key={category} value={category}>{category}</option>)}
-                </select>
-              </label>
-              <label className={styles.field}>
-                <span className={styles.visuallyHidden}>Attachment type</span>
-                <select name="attachment" defaultValue="">
-                  <option value="" disabled>Select Attachment Type</option>
-                  <option>Iron-on</option><option>Sew-on</option><option>Adhesive backing</option><option>Hook and loop</option><option>Other</option>
-                </select>
-              </label>
-              <label className={styles.field}>
-                <span className={styles.visuallyHidden}>Border type</span>
-                <select name="border" defaultValue="">
-                  <option value="" disabled>Select Border Type</option>
-                  <option>Merrowed</option><option>Laser cut</option><option>Heat cut</option><option>No border</option>
-                </select>
-              </label>
-              <label className={styles.field}>
-                <span className={styles.visuallyHidden}>Needed by</span>
-                <input name="neededBy" type="date" aria-label="Needed by date" />
-              </label>
-              <label className={styles.field}>
-                <span className={styles.visuallyHidden}>Quantity</span>
-                <input name="quantity" type="number" min="1" placeholder="Quantity" required />
-              </label>
-              <label className={styles.field}>
-                <span className={styles.visuallyHidden}>Name</span>
-                <input name="name" autoComplete="name" placeholder="Name" required />
-              </label>
-              <label className={styles.field}>
-                <span className={styles.visuallyHidden}>Email</span>
-                <input name="email" type="email" autoComplete="email" placeholder="Email" required />
-              </label>
-              <label className={styles.field}>
-                <span className={styles.visuallyHidden}>Contact phone</span>
-                <input name="phone" type="tel" autoComplete="tel" placeholder="Contact" />
-              </label>
-              <label className={`${styles.field} ${styles.fullWidth}`}>
-                <span className={styles.visuallyHidden}>Additional information</span>
-                <textarea name="message" rows={4} placeholder="Additional information..." />
-              </label>
-              <label className={styles.field}>
-                <span className={styles.visuallyHidden}>How did you find us?</span>
-                <select name="referral" defaultValue="">
-                  <option value="" disabled>How did you find us?</option>
-                  <option>Search engine</option><option>Social media</option><option>Referral</option><option>Returning customer</option><option>Other</option>
-                </select>
-              </label>
-              <label className={`${styles.fileField} ${styles.field}`}>
-                <span className={styles.visuallyHidden}>Artwork file</span>
-                <input
-                  name="artwork"
-                  type="file"
-                  accept="image/*,.pdf,.ai,.eps"
-                  onChange={(event) => setFileName(event.target.files?.[0]?.name ?? '')}
-                />
-                {fileName && <span className={styles.fileName}>{fileName}</span>}
-              </label>
-            </div>
-
-            {submitted && <p className={styles.success} role="status">Thanks, your request is ready. Our team will follow up by email.</p>}
-            <Button className={styles.submitButton} type="submit">Submit Now</Button>
-            </form>
+            <RequestForm source="contact" />
           </div>
         </div>
       </section>
+      <CustomerSatisfactionBanner />
+      <PatchQualityShowcase />
     </>
   );
 }
