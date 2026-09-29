@@ -1,7 +1,5 @@
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-block);
+  position: relative;
 }
 
 .viewport {
@@ -9,6 +7,7 @@
   scroll-snap-type: x mandatory;
   display: flex;
   gap: var(--space-block);
+  padding-top: var(--space-5);
   padding-bottom: var(--space-5);
   scrollbar-width: none;
 }
@@ -19,34 +18,70 @@
 
 .slide {
   flex: 0 0 auto;
-  width: min(280px, 80vw);
+  width: max(240px, calc((100% - 2 * var(--space-block)) / 3));
   scroll-snap-align: start;
 }
 
-.controls {
-  display: flex;
-  justify-content: flex-end;
-  gap: var(--space-5);
+@media (max-width: 720px) {
+  .slide {
+    width: min(280px, 80vw);
+  }
 }
 
 .arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
   width: 40px;
   height: 40px;
-  border-radius: var(--radius-sm);
+  border-radius: 50%;
   border: 1px solid var(--color-border-default);
-  background: transparent;
+  background: color-mix(in srgb, var(--color-surface-base) 85%, transparent);
   color: var(--color-text-on-dark);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background var(--motion-instant) var(--motion-ease);
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity var(--motion-instant) var(--motion-ease), background var(--motion-instant) var(--motion-ease),
+    border-color var(--motion-instant) var(--motion-ease);
+}
+
+.wrapper:hover .arrow,
+.arrow:focus-visible {
+  opacity: 1;
+}
+
+@media (hover: none) {
+  .arrow {
+    opacity: 1;
+  }
+}
+
+.arrowLeft {
+  left: calc(-1 * var(--space-8));
+}
+
+.arrowRight {
+  right: calc(-1 * var(--space-8));
 }
 
 .arrow:hover:not(:disabled) {
   background: var(--color-surface-raised);
+  border-color: var(--color-surface-strong);
 }
 
 .arrow:disabled {
   opacity: 0.35;
   cursor: not-allowed;
+}
+
+@media (max-width: 900px) {
+  .arrowLeft {
+    left: var(--space-4);
+  }
+
+  .arrowRight {
+    right: var(--space-4);
+  }
 }

@@ -31,9 +31,9 @@ export const categoryContent: CategoryContent[] = [
     heroImage: patches,
     hero: {
       eyebrow: 'Custom patches',
-      title: 'Patches built to outlast the jacket.',
+      title: 'Custom Patches Tailored to Perfection',
       description:
-        'Embroidered, woven, PVC, or printed — every patch is digitized in-house and tested on a physical stitch-out before your order ships.',
+        'Transform your vision into a wearable masterpiece. Explore our range of Chenille, Sublimated, and Embroidered patches designed for maximum durability and unmatched detail.',
     },
     collections: [
       {
@@ -47,24 +47,20 @@ export const categoryContent: CategoryContent[] = [
         description: 'Ultra-fine detailing and a sleek, low-profile finish for premium branding.',
       },
       {
-        type: 'Chenille',
-        title: 'Varsity Chenille Collection',
-        description: 'Bold letterman texture with tackle-twill accents for jackets and team gear.',
+        type: 'PVC',
+        title: 'Signature Molded PVC Patches',
+        description: 'High-precision rubber molding for a clean, sharp, and indestructible finish.',
       },
       {
-        type: 'PVC',
-        title: 'Raised PVC Collection',
-        description: 'Molded, weatherproof 3D patches built for outdoor and tactical gear.',
+        type: 'Chenille',
+        title: 'Iconic Chenille Patches',
+        description: 'Plush texture. Bold colors. Classic varsity style. Shop the ultimate collection of iron-on chenille patches.',
       },
       {
         type: 'Printed',
-        title: 'Full-Color Printed Collection',
-        description: 'Photo-real gradients and fine text that embroidery can’t reproduce.',
-      },
-      {
-        type: 'Sticker',
-        title: 'Sticker Patch Collection',
-        description: 'Peel-and-stick durability with a die-cut, laptop-ready edge.',
+        title: 'Sleek & Seamless Sublimated / DTF Art',
+        description:
+          'Experience the perfect blend of modern printing and classic patch aesthetics. Lightweight, durable, and ultra-detailed — perfect for hats, hoodies, and custom gear.',
       },
     ],
   },
@@ -74,20 +70,22 @@ export const categoryContent: CategoryContent[] = [
     heroImage: transfers,
     hero: {
       eyebrow: 'Heat-applied graphics',
-      title: 'Transfers that survive the wash, every time.',
+      title: 'Next-Level Transfers. Infinite Possibilities.',
       description:
-        'Full-color DTF or single-color screen transfers, pressed to spec and built for stretch, wash, and wear on cotton and blends.',
+        'One-stop shop for all your custom transfer needs. Get high-definition, easy-to-apply prints across multiple categories, engineered for maximum durability and vibrant results.',
     },
     collections: [
       {
         type: 'DTF',
-        title: 'Full-Color DTF Transfer Collection',
-        description: 'Direct-to-film prints with soft hand-feel and vivid color on any fabric.',
+        title: 'High-Quality DTF Transfers',
+        description:
+          'Scale your printing business with our premium "Ready-to-Press" DTF transfers. Get vibrant colors, extreme durability, and professional-grade gang sheets delivered straight to your door.',
       },
       {
-        type: 'Screen Print',
-        title: 'Screen Print Transfer Collection',
-        description: 'Cost-efficient plastisol transfers for large single-color production runs.',
+        type: 'Gang Sheets',
+        title: 'Pro-Scale DTF Gang Sheets',
+        description:
+          'Maximize your production with high-definition, ready-to-press rolls designed for seamless apparel branding.',
       },
     ],
   },
@@ -97,20 +95,28 @@ export const categoryContent: CategoryContent[] = [
     heroImage: stickers,
     hero: {
       eyebrow: 'Custom stickers',
-      title: 'Stickers that stick around.',
+      title: 'Custom Stickers for Every Surface',
       description:
-        'Weatherproof vinyl and precision die-cut decals, laminated to hold their color through years of sun, rain, and handling.',
+        'From vibrant holographic effects to crystal-clear transparent decals, we bring your designs to life with precision-cut, weather-resistant vinyl. Express yourself with Threadock’s elite sticker collection.',
     },
     collections: [
       {
-        type: 'Vinyl',
-        title: 'Weatherproof Vinyl Sticker Collection',
-        description: 'UV-resistant, laminate-coated stickers built for years outdoors.',
+        type: 'Die-Cut',
+        title: 'Weatherproof Custom Die-Cut Decals',
+        description:
+          'Tough, thick, and UV-resistant. These stickers are built to withstand the elements, making them perfect for your water bottles, laptops, cars, and outdoor gear. Your vision, perfectly shaped.',
       },
       {
-        type: 'Die-Cut Decal',
-        title: 'Die-Cut Decal Collection',
-        description: 'Precision-cut shapes with transfer tape, ready for windows and panels.',
+        type: 'Holographic',
+        title: 'Shimmer & Shine — Premium Holographic Stickers',
+        description:
+          'Give your brand a futuristic edge! Our holographic stickers feature a stunning rainbow effect that changes with light and perspective. Perfect for making your logo stand out with a high-end, multi-dimensional finish.',
+      },
+      {
+        type: 'Transparent',
+        title: 'Premium Transparent Stickers',
+        description:
+          'Elevate your branding with our seamless, borderless clear vinyl decals. Designed to blend perfectly with any surface, our transparent stickers offer a high-end "printed-on" effect that is waterproof, UV-resistant, and built to last.',
       },
     ],
   },
@@ -120,20 +126,20 @@ export const categoryContent: CategoryContent[] = [
     heroImage: bags,
     hero: {
       eyebrow: 'Bags & packaging',
-      title: 'Packaging and totes that carry your brand.',
-      description:
-        'From resealable poly bags for small-parts packaging to heavyweight canvas totes, printed and finished to your spec.',
+      title: 'Custom Branded Packaging & Bags',
+      description: 'Professional shipping and packaging solutions designed to elevate your brand’s unboxing experience.',
     },
     collections: [
       {
-        type: 'Poly',
-        title: 'Resealable Poly Bag Collection',
-        description: 'Printed, resealable packaging sized for apparel and small parts.',
+        type: 'Poly Mailers',
+        title: 'Heavy-Duty Shipping Mailers',
+        description:
+          'Lightweight yet indestructible packaging designed to protect your products from the warehouse to the doorstep.',
       },
       {
-        type: 'Canvas',
-        title: 'Canvas Tote Collection',
-        description: 'Heavyweight canvas totes with reinforced handles, screen-printed to spec.',
+        type: 'Frosted Poly Bags',
+        title: 'Signature Frosted Poly Bags',
+        description: 'Elevate your brand’s unboxing experience with our soft-touch, premium matte packaging.',
       },
     ],
   },
@@ -143,20 +149,22 @@ export const categoryContent: CategoryContent[] = [
     heroImage: keychains,
     hero: {
       eyebrow: 'Custom keychains',
-      title: 'Keychains your customers actually keep.',
+      title: 'Premium Bespoke Keychain Collection',
       description:
-        'Engraved metal and UV-printed acrylic keychains, boxed individually and built to ride along on every keyring they own.',
+        'Small details, big impressions. Our custom-crafted keychains offer a tactile and stylish way to showcase your brand identity with exceptional clarity and long-lasting quality.',
     },
     collections: [
       {
-        type: 'Metal',
-        title: 'Engraved Metal Keychain Collection',
-        description: 'Zinc-alloy keychains with color-fill engraving and a split ring.',
+        type: 'Leather',
+        title: 'Premium Leather Keychains',
+        description:
+          'Elevate your daily essentials with our handcrafted leather collection. From executive car loops to intricate artisan designs, experience the perfect blend of durability and high-end style.',
       },
       {
-        type: 'Acrylic',
-        title: 'Acrylic Keychain Collection',
-        description: 'UV-printed acrylic charms with a lobster clasp, popular for merch bundles.',
+        type: 'PVC',
+        title: 'Vibrant PVC Keychains',
+        description:
+          'Add a splash of personality to your gear! From cute characters and witty slogans to retro icons, our high-definition 3D PVC keychains are the ultimate "small-but-mighty" accessories.',
       },
     ],
   },
@@ -166,25 +174,16 @@ export const categoryContent: CategoryContent[] = [
     heroImage: promotionalItems,
     hero: {
       eyebrow: 'Promotional items',
-      title: 'Promo products people actually use.',
+      title: 'Your Brand with Premium Custom Merchandise',
       description:
-        'Lanyards, apparel, and drinkware branded for events, staff, and giveaways — built to be picked up more than once.',
+        'High-quality promotional items tailored for your business. From lanyards to bespoke gear, Threadock brings your vision to life with precision and style.',
     },
     collections: [
       {
         type: 'Lanyards',
-        title: 'Woven Lanyard Collection',
-        description: 'Custom woven lanyards with a breakaway clasp for events and staff badges.',
-      },
-      {
-        type: 'Apparel',
-        title: 'Team Apparel Collection',
-        description: 'Moisture-wicking jerseys with sublimated graphics and roster numbering.',
-      },
-      {
-        type: 'Drinkware',
-        title: 'Branded Drinkware Collection',
-        description: 'Wraparound-print ceramic mugs, packed for retail or trade-show giveaways.',
+        title: 'Premium Custom Lanyards for Professional Impact',
+        description:
+          'Experience the perfect blend of comfort and durability. Our custom lanyards feature vibrant sublimation printing and premium hooks that last as long as your brand.',
       },
     ],
   },

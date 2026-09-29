@@ -1,6 +1,6 @@
 .wrap {
   text-align: center;
-  padding-block: var(--space-block);
+  padding-block: var(--space-section);
 }
 
 .wrap + .wrap {
@@ -9,15 +9,15 @@
 
 .title {
   color: var(--color-text-on-dark);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-6);
 }
 
 .description {
   color: var(--color-text-secondary);
   opacity: 0.85;
-  max-width: 56ch;
+  max-width: 64ch;
   margin-inline: auto;
-  margin-bottom: var(--space-block);
+  margin-bottom: var(--space-section);
 }
 
 .row {
@@ -25,4 +25,14 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--space-block);
+}
+
+.item {
+  width: max(240px, calc((100% - 2 * var(--space-block)) / 3));
+}
+
+@media (max-width: 720px) {
+  .item {
+    width: min(280px, 80vw);
+  }
 }

@@ -1,0 +1,9 @@
+.section {
+  background-image: linear-gradient(
+      color-mix(in srgb, black 68%, transparent),
+      color-mix(in srgb, black 84%, transparent)
+    ),
+    url('../../assets/bg_img_8.jpg');
+  background-size: cover;
+  background-position: center;
+}

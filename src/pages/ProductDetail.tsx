@@ -35,11 +35,49 @@ export default function ProductDetail() {
         <div className="page-container">
           <div className={styles.productOverview}>
             <ProductSwatch product={product} size="lg" />
-            <div className={styles.badges}>
-              {product.bestseller && <Badge variant="bestseller">Bestseller</Badge>}
-              {product.signature && <Badge variant="signature">Signature</Badge>}
+
+            <div className={styles.info}>
+              <h2 className={`${styles.name} text-h2`}>{product.name}</h2>
+
+              <div className={styles.badges}>
+                {product.bestseller && <Badge variant="bestseller">Bestseller</Badge>}
+                {product.signature && <Badge variant="signature">Signature</Badge>}
+              </div>
+
+              {product.tagline && <p className={`${styles.tagline} text-h4`}>{product.tagline}</p>}
+
+              {product.detail?.map((paragraph, index) => (
+                <p className={`${styles.paragraph} text-body-lg`} key={index}>
+                  {paragraph}
+                </p>
+              ))}
+
+              {product.highlights && product.highlights.length > 0 && (
+                <ul className={styles.highlights}>
+                  {product.highlights.map((highlight) => (
+                    <li className={styles.highlight} key={highlight}>
+                      {highlight}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
+
+          {product.specs && product.specs.length > 0 && (
+            <div className={styles.specs}>
+              <h2 className={`${styles.specsTitle} text-h3`}>Product Specifications</h2>
+              <div className={styles.specTable}>
+                {product.specs.map((spec) => (
+                  <div className={styles.specRow} key={spec.label}>
+                    <span className={styles.specLabel}>{spec.label}</span>
+                    <span className={styles.specValue}>{spec.value}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {related.length > 0 && (
             <div className={styles.related}>
               <h2 className={`${styles.relatedTitle} text-h2`}>You may also like</h2>

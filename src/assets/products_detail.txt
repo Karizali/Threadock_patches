@@ -1,26 +1,408 @@
+Stickers:
 Hero section Text:
-Premium Custom Stickers
+
+heading: Custom Stickers
 for Every Surface
 
-From vibrant holographic effects to crystal-clear transparent decals, we bring your designs to life with precision cutting
+Textline1: vibrant holographic effects to crystal-clear transparent decals, we bring your designs to life with precision cutting
 
-and weather-resistant vinyl. Express yourself with FT Customization’s elite sticker collection.
+Textline2: weather-resistant vinyl. Express yourself with FT Customization’s elite sticker collection.
 
 
 Types:
 
-Weatherproof Custom Die Cut Decals
+Type1:
+Heading:Weatherproof Custom Die Cut Decals
 
-Tough, thick, and UV-resistant. These stickers are built to withstand the elements, making them perfect for your water bottles, laptops, cars, and outdoor gear. Your vision, perfectly shaped.
+text under heading: under heading: Tough, thick, and UV-resistant. These stickers are built to withstand the elements, making them perfect for your water bottles, laptops, cars, and outdoor gear. Your vision, perfectly shaped.
+
+carousel:
+picture1
+text: Neon Melting Skull (Die-Cut Sticker)
+
+picture2
+text: Inspirational Script Die-Cut Laptop Sticker
+
+
+picture3
+text: "Road Trip" Adventure Die-Cut Sticker
+
+
+picture4
+text: Custom Die-Cut Stickers – Your Design, Your Shape
+
+
+picture5
+text: Floral Dagger True Crime Vinyl Decal
+
+
+picture6
+text: "Hit the Trails" Adventure Die-Cut Sticker
 
 
 
-Shimmer & Shine - Premium Holographic Stickers
+
+Type2:
+Heading:Shimmer & Shine - Premium Holographic Stickers
 
 Give your brand a futuristic edge! Our holographic stickers feature a stunning rainbow effect that changes with light and perspective. Perfect for making your logo stand out with a high-end, multi-dimensional finish.
 
+carousel:
+picture1
+text: Sticker1
+
+picture2
+text: Sticker2
+
+picture3
+text: Sticker3
+
+Type3:
+Heading:Premium Transparent Stickers
+
+text under heading: Elevate your branding with our seamless, borderless clear vinyl decals. Designed to blend perfectly with any surface, our transparent stickers offer a high-end “printed-on” effect that is waterproof, UV-resistant, and built to last.
+
+carousel:
+picture
+text:Don’t Panic! – Clear Vinyl Sticker
+
+picture
+text:Skeleton Thumbs Up – Clear Vinyl Sticker
+
+picture
+text:Custom Shape Die-Cut Transparent Stickers
+
+picture
+text:Kermit “Slap” – Transparent Vinyl Sticker
 
 
-Premium Transparent Stickers
 
-Elevate your branding with our seamless, borderless clear vinyl decals. Designed to blend perfectly with any surface, our transparent stickers offer a high-end “printed-on” effect that is waterproof, UV-resistant, and built to last.
+Patches:
+Hero Section:
+
+
+heading: Custom Patches
+Tailored to Perfection
+
+Textline1:Transform your vision into a wearable masterpiece. Explore our range of Chenille, Sublimated,
+
+Textline2:and Embroidered patches designed for maximum durability and unmatched detail.
+
+
+
+Types:
+
+Type1:
+Heading:Premium Embroidered Patch Collection
+
+text under heading: Intricate stitching and 3D textured designs for a classic look.
+
+carousel:
+picture
+text:Vintage Steamship Artistic Embroidered Patch
+
+picture
+text:Gardening Skeleton Premium Embroidered Patch
+
+picture
+text:Premium Wildlife Series Embroidered Patch
+
+picture
+text:Premium Astronaut & Galaxy Embroidered Patches
+
+picture
+text:Vintage Steamship Artistic Embroidered Patch
+
+
+Type2:
+Heading:
+
+text under heading: Ultra-fine detailing and a sleek, low-profile finish for premium branding.
+
+
+carousel:
+picture
+text: Tactical Mascot Series Woven Patch
+
+picture
+text: Premium Circular Wildlife Woven Patch
+
+picture
+text: 3D Effect Style Woven Patch
+
+picture
+text: Premium Custom Woven Patch
+
+picture
+text: Tactical Mascot Series Woven Patch
+
+picture
+text: Premium Circular Wildlife Woven Patch
+
+picture
+text: 3D Effect Style Woven Patch
+
+
+
+
+
+Type3:
+Heading:Signature Molded PVC Patches
+
+text under heading: High-precision rubber molding for a clean, sharp, and indestructible finish.
+
+
+carousel:
+picture
+text:Tactical Wasp “CLT4 RME” Shield PVC Patch
+
+picture
+text:Custom Branding Sample PVC Patch (Circular)
+
+picture
+text:Tactical Angry Bull 3D PVC Mascot Patch
+
+
+Type4:
+Heading:Iconic Chenille Patches
+
+text under heading:Plush texture. Bold colors. Classic varsity style. Shop the ultimate collection of iron-on chenille patches.
+
+
+carousel:
+picture
+text:Cute Tiger Cub Chenille Patch
+
+picture
+text:Retro Smiley Face Chenille Patch
+
+picture
+text:Custom Chenille Varsity Letter Patch
+
+picture
+text:Multi-Color “COOL” Chenille Patch
+
+
+
+
+
+
+
+
+Sleek & Seamless Sublimated /DTF Art
+
+Experience the perfect blend of modern printing and classic patch aesthetics. Lightweight, durable, and ultra-detailed—perfect for hats, hoodies, and custom gear.
+
+carousel:
+
+picture
+text:High-Definition Sublimated Round Sticker Patch
+
+
+picture
+text:Custom High-Definition Printed Patch
+
+
+
+Transfers:
+Hero section:
+
+
+Next-Level Transfers. Infinite Possibilities.
+
+One stop for all your custom transfer needs. Get high-definition, easy-to-apply prints across multiple categories,
+
+engineered for maximum durability and vibrant results
+
+
+Types:
+
+
+Type1:
+Heading:High-Quality DTF Transfers
+
+text under heading:
+Scale your printing business with our premium “Ready-to-Press” DTF transfers. Get vibrant colors, extreme durability, and professional-grade gang sheets delivered straight to your door
+
+carousel:
+
+picture
+text:Custom DTF Gang Sheets
+
+picture
+text:Premium Custom DTF Transfers
+
+picture
+text:Premium DTF Ready-to-Press Transfers
+
+
+
+
+
+Type2:
+Heading:Pro-Scale DTF Gang Sheets
+
+text under heading:
+Maximize your production with high-definition, ready-to-press rolls designed for seamless apparel branding.
+
+carousel:
+
+picture
+text:Ultra-HD Custom DTF Transfer Sheets
+
+picture
+text:Creative Hub DTF Heat Transfer Sheets
+
+picture
+text:Pro-Connect DTF Gang Sheet Rolls
+
+
+
+
+Bags:
+Hero section:
+
+
+Custom Branded Packaging & Bags
+
+Professional shipping and packaging solutions designed to elevate your brand’s unboxing experience.
+
+
+
+Types:
+
+Type1:
+Heading:Heavy-Duty Shipping Mailers
+
+text under heading:
+Lightweight yet indestructible packaging designed to protect your products from the warehouse to the doorstep.
+
+
+
+carousel:
+
+picture
+text:Custom Printed Branding Poly Mailers
+picture
+text:Compostable Eco-Friendly Poly Mailer
+picture
+text:Premium Frosted Poly Mailer for Apparel
+picture
+text:Classic White Self-Seal Poly Mailers
+picture
+text:Designer Polka Dot Poly Mailers
+
+
+
+
+
+Type2:
+Heading:Signature Frosted Poly Bags
+
+text under heading:
+Elevate your brand’s unboxing experience with our soft-touch, premium matte packaging.
+
+
+carousel:
+
+picture
+text:Premium Custom Frosted Poly Bag
+
+picture
+text:Frosted Die-Cut Handle Poly Bag
+
+picture
+text:Premium Matte Apparel Packaging Bags
+
+picture
+text:Threadock Customization Premium Frosted Poly Bag
+
+
+
+
+Keychain:
+Hero section:
+
+
+Premium Bespoke Keychain Collection
+
+Small details, big impressions. Our custom-crafted keychains offer a tactile and stylish way to showcase your brand identity with exceptional clarity and long-lasting quality.
+
+
+Types:
+
+
+
+Type1:
+Heading:Premium Leather Keychains
+text under heading:
+Elevate your daily essentials with our handcrafted leather collection. From executive car loops to intricate artisan designs, experience the perfect blend of durability and high-end style.
+
+
+carousel:
+
+picture
+text:Midnight Bat Leather Keychain
+
+picture
+text:Artisan Layered Leather Leaf Keychain
+
+picture
+text:Premium Handcrafted Leather Keychains
+
+picture
+text:Executive Leather Loop Keychains
+
+
+
+
+Type2:
+Heading:Vibrant PVC Keychains
+text under heading:
+Add a splash of personality to your gear! From cute characters and witty slogans to retro icons, our high-definition 3D PVC keychains are the ultimate “small-but-mighty” accessories.
+
+carousel:
+
+picture
+text:Ultimate Pop Culture PVC Keychain Collection
+
+picture
+text:Kawaii Motivational PVC Keychains
+
+picture
+text:Angry Panda PVC Keychain
+
+picture
+text:Premium Neon Vibrant Rubber Keychain
+
+
+
+Promotional Items:
+Hero section:
+heading: Your Brand with
+Premium Custom Merchandise.
+
+Textline1: High-quality promotional items tailored for your business. From lanyards to bespoke gear,
+
+Textline2:FT Customization brings your vision to life with precision and style.
+
+
+Types:
+
+Type1:
+heading: Premium Custom Lanyards for Professional Impact.
+
+text under heading: Experience the perfect blend of comfort and durability. Our custom lanyards feature vibrant sublimation printing and premium hooks that last as long as your brand.
+
+picture1
+text: Custom Detachable Buckle Lanyards with Safety Breakaway
+
+picture2
+text:Premium Full-Color Sublimated Custom Lanyards
+
+picture3
+text: Elite Series Custom Branding Lanyard
+
+
+
+

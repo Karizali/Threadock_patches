@@ -1,3 +1,8 @@
+export interface ProductSpec {
+  label: string;
+  value: string;
+}
+
 export interface Product {
   id: string;
   slug: string;
@@ -8,6 +13,14 @@ export interface Product {
   monogram: string;
   bestseller?: boolean;
   signature?: boolean;
+  /** Short subheading shown above the detail copy on the product page. */
+  tagline?: string;
+  /** One or more paragraphs of long-form detail copy. */
+  detail?: string[];
+  /** Bullet feature list shown on the product detail page. */
+  highlights?: string[];
+  /** Spec table rows shown on the product detail page. */
+  specs?: ProductSpec[];
 }
 
 export interface Testimonial {
