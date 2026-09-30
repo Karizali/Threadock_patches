@@ -16,11 +16,9 @@ interface HeroProps {
 
 const defaultActions = (
   <>
+
     <Link to="/products">
-      <Button variant="primary">Explore the catalog</Button>
-    </Link>
-    <Link to="/contact">
-      <Button variant="secondary">Request a quote</Button>
+      <Button variant="secondary">Explore the catalog</Button>
     </Link>
   </>
 );

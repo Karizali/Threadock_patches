@@ -20,7 +20,7 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
           </div>
         )}
 
-        <img className={styles.image} src={categoryImages[product.category]} alt={product.name} loading="lazy" />
+        <img className={styles.image} src={product.image ?? categoryImages[product.category]} alt={product.name} loading="lazy" />
 
         {/* Quick View Hover Overlay */}
         <button

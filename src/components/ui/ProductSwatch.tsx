@@ -12,7 +12,7 @@ export function ProductSwatch({ product, size = 'sm' }: ProductSwatchProps) {
     <div className={`${styles.swatch} ${styles[size]}`}>
       <img
         className={styles.image}
-        src={categoryImages[product.category]}
+        src={product.image ?? categoryImages[product.category]}
         alt={product.name}
         loading="lazy"
       />

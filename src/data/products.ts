@@ -1,10 +1,73 @@
 import type { Product } from '../types';
 
+import patchSteamship from '../assets/product_images/patches_category21.jpg';
+import patchGardeningSkeleton from '../assets/product_images/patches_category22.jpg';
+import patchWildlifeFox from '../assets/product_images/patches_category23.jpg';
+import patchAstronautGalaxy from '../assets/product_images/patches_category24.jpg';
+import patchTacticalMascot from '../assets/product_images/patches_category31.jpg';
+import patchCircularWildlife from '../assets/product_images/patches_category32.jpg';
+import patch3dEffect from '../assets/product_images/patches_category33.jpg';
+import patchCustomWoven from '../assets/product_images/patches_categrogy11.jpg';
+import patchTacticalWasp from '../assets/product_images/patches_categrogy12.jpg';
+import patchBrandingSample from '../assets/product_images/patches_categrogy13.jpg';
+import patchAngryBull from '../assets/product_images/patches_categrogy14.jpg';
+import patchTigerCub from '../assets/product_images/patches_embridery1.jpg';
+import patchSmileyFace from '../assets/product_images/patches_embridery2.jpg';
+import patchVarsityLetter from '../assets/product_images/patches_embridery3.jpg';
+import patchCool from '../assets/product_images/patches_embridery4.jpg';
+import patchSublimatedRound from '../assets/product_images/patches_category41.jpg';
+import patchHdPrinted from '../assets/product_images/patches_category42.jpg';
+
+import transferGangSheets from '../assets/product_images/Transfers4.jpg';
+import transferPremiumCustom from '../assets/product_images/Transfers1.jpg';
+import transferReadyToPress from '../assets/product_images/Transfers2.jpg';
+import transferUltraHd from '../assets/product_images/Transfers3.jpg';
+import transferCreativeHub from '../assets/product_images/Transfers5.jpg';
+import transferProConnect from '../assets/product_images/Transfers6.jpg';
+
+import stickerSkull from '../assets/product_images/stickers1.jpg';
+import stickerScript from '../assets/product_images/stickers2.jpg';
+import stickerRoadTrip from '../assets/product_images/stickers3.jpg';
+import stickerCustomShapes from '../assets/product_images/stickers4.jpg';
+import stickerFloralDagger from '../assets/product_images/stickers5.jpg';
+import stickerTrailblazer from '../assets/product_images/stickers6.jpg';
+import stickerHolographicFoil from '../assets/product_images/stickers_holoscopic1.jpg';
+import stickerHolographicRainbow from '../assets/product_images/stickers_holoscopic2.jpg';
+import stickerHolographicLogo from '../assets/product_images/stickers9.jpg';
+import stickerDontPanic from '../assets/product_images/stickers10.jpg';
+import stickerSkeletonThumbsUp from '../assets/product_images/stickers11.jpg';
+import stickerCustomTransparent from '../assets/product_images/stickers12.jpg';
+import stickerKermit from '../assets/product_images/stickers13.jpg';
+
+import bagBranding from '../assets/product_images/bags1.jpg';
+import bagCompostable from '../assets/product_images/bags2.jpg';
+import bagFrostedApparel from '../assets/product_images/bags3.jpg';
+import bagClassicWhite from '../assets/product_images/bags4.jpg';
+import bagPolkaDot from '../assets/product_images/bags5.jpg';
+import bagFrostedCustom from '../assets/product_images/bags6.jpg';
+import bagDieCutHandle from '../assets/product_images/bags7.jpg';
+import bagMatteApparel from '../assets/product_images/bags8.jpg';
+import bagThreadock from '../assets/product_images/bags9_threadock.jpg';
+
+import keychainMidnightBat from '../assets/product_images/keychains_loopkeychain1.jpg';
+import keychainLayeredLeaf from '../assets/product_images/keychains_loopkeychain2.jpg';
+import keychainHandcrafted from '../assets/product_images/keychains_loopkeychain3.jpg';
+import keychainExecutiveLoop from '../assets/product_images/keychains_loopkeychain4.jpg';
+import keychainPopCulture from '../assets/product_images/keychains_clut.jpg';
+import keychainKawaii from '../assets/product_images/keychains_3dcharacters.jpg';
+import keychainAngryPanda from '../assets/product_images/keychains_angrypanda.jpg';
+import keychainNeon from '../assets/product_images/keychains_neon_colorful.jpg';
+
+import lanyardDetachableBuckle from '../assets/product_images/ Keychains_flatwovenkeychain1.jpg';
+import lanyardFullColorSublimated from '../assets/product_images/ Keychains_flatwovenkeychain2.jpg';
+import lanyardEliteSeries from '../assets/product_images/ Keychains_flatwovenkeychain3.jpg';
+
 export const products: Product[] = [
   // ---- Patches: Embroidered ----
   {
     id: 'p1',
     slug: 'vintage-steamship-artistic-embroidered-patch',
+    image: patchSteamship,
     name: 'Vintage Steamship Artistic Embroidered Patch',
     category: 'Patches',
     type: 'Embroidered',
@@ -31,6 +94,7 @@ export const products: Product[] = [
   {
     id: 'p2',
     slug: 'gardening-skeleton-premium-embroidered-patch',
+    image: patchGardeningSkeleton,
     name: 'Gardening Skeleton Premium Embroidered Patch',
     category: 'Patches',
     type: 'Embroidered',
@@ -55,6 +119,7 @@ export const products: Product[] = [
   {
     id: 'p3',
     slug: 'premium-wildlife-series-embroidered-patch',
+    image: patchWildlifeFox,
     name: 'Premium Wildlife Series Embroidered Patch',
     category: 'Patches',
     type: 'Embroidered',
@@ -79,6 +144,7 @@ export const products: Product[] = [
   {
     id: 'p4',
     slug: 'premium-astronaut-galaxy-embroidered-patches',
+    image: patchAstronautGalaxy,
     name: 'Premium Astronaut & Galaxy Embroidered Patches',
     category: 'Patches',
     type: 'Embroidered',
@@ -106,6 +172,7 @@ export const products: Product[] = [
   {
     id: 'p5',
     slug: 'tactical-mascot-series-woven-patch',
+    image: patchTacticalMascot,
     name: 'Tactical Mascot Series Woven Patch',
     category: 'Patches',
     type: 'Woven',
@@ -131,6 +198,7 @@ export const products: Product[] = [
   {
     id: 'p6',
     slug: 'premium-circular-wildlife-woven-patch',
+    image: patchCircularWildlife,
     name: 'Premium Circular Wildlife Woven Patch',
     category: 'Patches',
     type: 'Woven',
@@ -155,6 +223,7 @@ export const products: Product[] = [
   {
     id: 'p7',
     slug: '3d-effect-style-woven-patch',
+    image: patch3dEffect,
     name: '3D Effect Style Woven Patch',
     category: 'Patches',
     type: 'Woven',
@@ -179,6 +248,7 @@ export const products: Product[] = [
   {
     id: 'p8',
     slug: 'premium-custom-woven-patch',
+    image: patchCustomWoven,
     name: 'Premium Custom Woven Patch',
     category: 'Patches',
     type: 'Woven',
@@ -205,6 +275,7 @@ export const products: Product[] = [
   {
     id: 'p9',
     slug: 'tactical-wasp-clt4-rme-shield-pvc-patch',
+    image: patchTacticalWasp,
     name: 'Tactical Wasp "CLT4 RME" Shield PVC Patch',
     category: 'Patches',
     type: 'PVC',
@@ -229,6 +300,7 @@ export const products: Product[] = [
   {
     id: 'p10',
     slug: 'custom-branding-sample-pvc-patch-circular',
+    image: patchBrandingSample,
     name: 'Custom Branding Sample PVC Patch (Circular)',
     category: 'Patches',
     type: 'PVC',
@@ -253,6 +325,7 @@ export const products: Product[] = [
   {
     id: 'p11',
     slug: 'tactical-angry-bull-3d-pvc-mascot-patch',
+    image: patchAngryBull,
     name: 'Tactical Angry Bull 3D PVC Mascot Patch',
     category: 'Patches',
     type: 'PVC',
@@ -279,6 +352,7 @@ export const products: Product[] = [
   {
     id: 'p12',
     slug: 'cute-tiger-cub-chenille-patch',
+    image: patchTigerCub,
     name: 'Cute Tiger Cub Chenille Patch',
     category: 'Patches',
     type: 'Chenille',
@@ -304,6 +378,7 @@ export const products: Product[] = [
   {
     id: 'p13',
     slug: 'retro-smiley-face-chenille-patch',
+    image: patchSmileyFace,
     name: 'Retro Smiley Face Chenille Patch',
     category: 'Patches',
     type: 'Chenille',
@@ -328,6 +403,7 @@ export const products: Product[] = [
   {
     id: 'p14',
     slug: 'custom-chenille-varsity-letter-patch',
+    image: patchVarsityLetter,
     name: 'Custom Chenille Varsity Letter Patch',
     category: 'Patches',
     type: 'Chenille',
@@ -352,6 +428,7 @@ export const products: Product[] = [
   {
     id: 'p15',
     slug: 'multi-color-cool-chenille-patch',
+    image: patchCool,
     name: 'Multi-Color "COOL" Chenille Patch',
     category: 'Patches',
     type: 'Chenille',
@@ -378,6 +455,7 @@ export const products: Product[] = [
   {
     id: 'p16',
     slug: 'high-definition-sublimated-round-sticker-patch',
+    image: patchSublimatedRound,
     name: 'High-Definition Sublimated Round Sticker Patch',
     category: 'Patches',
     type: 'Printed',
@@ -403,6 +481,7 @@ export const products: Product[] = [
   {
     id: 'p17',
     slug: 'custom-high-definition-printed-patch',
+    image: patchHdPrinted,
     name: 'Custom High-Definition Printed Patch',
     category: 'Patches',
     type: 'Printed',
@@ -430,6 +509,7 @@ export const products: Product[] = [
   {
     id: 'p20',
     slug: 'custom-dtf-gang-sheets',
+    image: transferGangSheets,
     name: 'Custom DTF Gang Sheets',
     category: 'Transfers',
     type: 'DTF',
@@ -443,6 +523,7 @@ export const products: Product[] = [
   {
     id: 'p21',
     slug: 'premium-custom-dtf-transfers',
+    image: transferPremiumCustom,
     name: 'Premium Custom DTF Transfers',
     category: 'Transfers',
     type: 'DTF',
@@ -455,6 +536,7 @@ export const products: Product[] = [
   {
     id: 'p22',
     slug: 'premium-dtf-ready-to-press-transfers',
+    image: transferReadyToPress,
     name: 'Premium DTF Ready-to-Press Transfers',
     category: 'Transfers',
     type: 'DTF',
@@ -469,6 +551,7 @@ export const products: Product[] = [
   {
     id: 'p23',
     slug: 'ultra-hd-custom-dtf-transfer-sheets',
+    image: transferUltraHd,
     name: 'Ultra-HD Custom DTF Transfer Sheets',
     category: 'Transfers',
     type: 'Gang Sheets',
@@ -481,6 +564,7 @@ export const products: Product[] = [
   {
     id: 'p24',
     slug: 'creative-hub-dtf-heat-transfer-sheets',
+    image: transferCreativeHub,
     name: 'Creative Hub DTF Heat Transfer Sheets',
     category: 'Transfers',
     type: 'Gang Sheets',
@@ -493,6 +577,7 @@ export const products: Product[] = [
   {
     id: 'p25',
     slug: 'pro-connect-dtf-gang-sheet-rolls',
+    image: transferProConnect,
     name: 'Pro-Connect DTF Gang Sheet Rolls',
     category: 'Transfers',
     type: 'Gang Sheets',
@@ -507,6 +592,7 @@ export const products: Product[] = [
   {
     id: 'p27',
     slug: 'neon-melting-skull-die-cut-sticker',
+    image: stickerSkull,
     name: 'Neon Melting Skull (Die-Cut Sticker)',
     category: 'Stickers',
     type: 'Die-Cut',
@@ -527,6 +613,7 @@ export const products: Product[] = [
   {
     id: 'p28',
     slug: 'inspirational-script-die-cut-laptop-sticker',
+    image: stickerScript,
     name: 'Inspirational Script Die-Cut Laptop Sticker',
     category: 'Stickers',
     type: 'Die-Cut',
@@ -550,6 +637,7 @@ export const products: Product[] = [
   {
     id: 'p29',
     slug: 'road-trip-adventure-die-cut-sticker',
+    image: stickerRoadTrip,
     name: '"Road Trip" Adventure Die-Cut Sticker',
     category: 'Stickers',
     type: 'Die-Cut',
@@ -569,6 +657,7 @@ export const products: Product[] = [
   {
     id: 'p30',
     slug: 'custom-die-cut-stickers-your-design-your-shape',
+    image: stickerCustomShapes,
     name: 'Custom Die-Cut Stickers – Your Design, Your Shape',
     category: 'Stickers',
     type: 'Die-Cut',
@@ -588,6 +677,7 @@ export const products: Product[] = [
   {
     id: 'p31',
     slug: 'floral-dagger-true-crime-vinyl-decal',
+    image: stickerFloralDagger,
     name: 'Floral Dagger True Crime Vinyl Decal',
     category: 'Stickers',
     type: 'Die-Cut',
@@ -607,6 +697,7 @@ export const products: Product[] = [
   {
     id: 'p32',
     slug: 'hit-the-trails-adventure-die-cut-sticker',
+    image: stickerTrailblazer,
     name: '"Hit the Trails" Adventure Die-Cut Sticker',
     category: 'Stickers',
     type: 'Die-Cut',
@@ -628,6 +719,7 @@ export const products: Product[] = [
   {
     id: 'p33',
     slug: 'holographic-foil-sticker',
+    image: stickerHolographicFoil,
     name: 'Holographic Foil Sticker',
     category: 'Stickers',
     type: 'Holographic',
@@ -647,6 +739,7 @@ export const products: Product[] = [
   {
     id: 'p34',
     slug: 'holographic-rainbow-decal',
+    image: stickerHolographicRainbow,
     name: 'Holographic Rainbow Decal',
     category: 'Stickers',
     type: 'Holographic',
@@ -666,6 +759,7 @@ export const products: Product[] = [
   {
     id: 'p35',
     slug: 'holographic-logo-sticker',
+    image: stickerHolographicLogo,
     name: 'Holographic Logo Sticker',
     category: 'Stickers',
     type: 'Holographic',
@@ -687,6 +781,7 @@ export const products: Product[] = [
   {
     id: 'p36',
     slug: 'dont-panic-clear-vinyl-sticker',
+    image: stickerDontPanic,
     name: "Don't Panic! – Clear Vinyl Sticker",
     category: 'Stickers',
     type: 'Transparent',
@@ -706,6 +801,7 @@ export const products: Product[] = [
   {
     id: 'p37',
     slug: 'skeleton-thumbs-up-clear-vinyl-sticker',
+    image: stickerSkeletonThumbsUp,
     name: 'Skeleton Thumbs Up – Clear Vinyl Sticker',
     category: 'Stickers',
     type: 'Transparent',
@@ -725,6 +821,7 @@ export const products: Product[] = [
   {
     id: 'p38',
     slug: 'custom-shape-die-cut-transparent-stickers',
+    image: stickerCustomTransparent,
     name: 'Custom Shape Die-Cut Transparent Stickers',
     category: 'Stickers',
     type: 'Transparent',
@@ -744,6 +841,7 @@ export const products: Product[] = [
   {
     id: 'p39',
     slug: 'kermit-slap-transparent-vinyl-sticker',
+    image: stickerKermit,
     name: 'Kermit "Slap" – Transparent Vinyl Sticker',
     category: 'Stickers',
     type: 'Transparent',
@@ -765,6 +863,7 @@ export const products: Product[] = [
   {
     id: 'p40',
     slug: 'custom-printed-branding-poly-mailers',
+    image: bagBranding,
     name: 'Custom Printed Branding Poly Mailers',
     category: 'Bags',
     type: 'Poly Mailers',
@@ -776,6 +875,7 @@ export const products: Product[] = [
   {
     id: 'p41',
     slug: 'compostable-eco-friendly-poly-mailer',
+    image: bagCompostable,
     name: 'Compostable Eco-Friendly Poly Mailer',
     category: 'Bags',
     type: 'Poly Mailers',
@@ -788,6 +888,7 @@ export const products: Product[] = [
   {
     id: 'p42',
     slug: 'premium-frosted-poly-mailer-for-apparel',
+    image: bagFrostedApparel,
     name: 'Premium Frosted Poly Mailer for Apparel',
     category: 'Bags',
     type: 'Poly Mailers',
@@ -800,6 +901,7 @@ export const products: Product[] = [
   {
     id: 'p43',
     slug: 'classic-white-self-seal-poly-mailers',
+    image: bagClassicWhite,
     name: 'Classic White Self-Seal Poly Mailers',
     category: 'Bags',
     type: 'Poly Mailers',
@@ -812,6 +914,7 @@ export const products: Product[] = [
   {
     id: 'p44',
     slug: 'designer-polka-dot-poly-mailers',
+    image: bagPolkaDot,
     name: 'Designer Polka Dot Poly Mailers',
     category: 'Bags',
     type: 'Poly Mailers',
@@ -826,6 +929,7 @@ export const products: Product[] = [
   {
     id: 'p45',
     slug: 'premium-custom-frosted-poly-bag',
+    image: bagFrostedCustom,
     name: 'Premium Custom Frosted Poly Bag',
     category: 'Bags',
     type: 'Frosted Poly Bags',
@@ -838,6 +942,7 @@ export const products: Product[] = [
   {
     id: 'p46',
     slug: 'frosted-die-cut-handle-poly-bag',
+    image: bagDieCutHandle,
     name: 'Frosted Die-Cut Handle Poly Bag',
     category: 'Bags',
     type: 'Frosted Poly Bags',
@@ -850,6 +955,7 @@ export const products: Product[] = [
   {
     id: 'p47',
     slug: 'premium-matte-apparel-packaging-bags',
+    image: bagMatteApparel,
     name: 'Premium Matte Apparel Packaging Bags',
     category: 'Bags',
     type: 'Frosted Poly Bags',
@@ -862,6 +968,7 @@ export const products: Product[] = [
   {
     id: 'p48',
     slug: 'threadock-customization-premium-frosted-poly-bag',
+    image: bagThreadock,
     name: 'Threadock Customization Premium Frosted Poly Bag',
     category: 'Bags',
     type: 'Frosted Poly Bags',
@@ -876,6 +983,7 @@ export const products: Product[] = [
   {
     id: 'p50',
     slug: 'midnight-bat-leather-keychain',
+    image: keychainMidnightBat,
     name: 'Midnight Bat Leather Keychain',
     category: 'Keychains',
     type: 'Leather',
@@ -902,6 +1010,7 @@ export const products: Product[] = [
   {
     id: 'p51',
     slug: 'artisan-layered-leather-leaf-keychain',
+    image: keychainLayeredLeaf,
     name: 'Artisan Layered Leather Leaf Keychain',
     category: 'Keychains',
     type: 'Leather',
@@ -927,6 +1036,7 @@ export const products: Product[] = [
   {
     id: 'p52',
     slug: 'premium-handcrafted-leather-keychains',
+    image: keychainHandcrafted,
     name: 'Premium Handcrafted Leather Keychains',
     category: 'Keychains',
     type: 'Leather',
@@ -952,6 +1062,7 @@ export const products: Product[] = [
   {
     id: 'p53',
     slug: 'executive-leather-loop-keychains',
+    image: keychainExecutiveLoop,
     name: 'Executive Leather Loop Keychains',
     category: 'Keychains',
     type: 'Leather',
@@ -979,6 +1090,7 @@ export const products: Product[] = [
   {
     id: 'p54',
     slug: 'ultimate-pop-culture-pvc-keychain-collection',
+    image: keychainPopCulture,
     name: 'Ultimate Pop Culture PVC Keychain Collection',
     category: 'Keychains',
     type: 'PVC',
@@ -1004,6 +1116,7 @@ export const products: Product[] = [
   {
     id: 'p55',
     slug: 'kawaii-motivational-pvc-keychains',
+    image: keychainKawaii,
     name: 'Kawaii Motivational PVC Keychains',
     category: 'Keychains',
     type: 'PVC',
@@ -1029,6 +1142,7 @@ export const products: Product[] = [
   {
     id: 'p56',
     slug: 'angry-panda-pvc-keychain',
+    image: keychainAngryPanda,
     name: 'Angry Panda PVC Keychain',
     category: 'Keychains',
     type: 'PVC',
@@ -1054,6 +1168,7 @@ export const products: Product[] = [
   {
     id: 'p57',
     slug: 'premium-neon-vibrant-rubber-keychain',
+    image: keychainNeon,
     name: 'Premium Neon Vibrant Rubber Keychain',
     category: 'Keychains',
     type: 'PVC',
@@ -1081,6 +1196,7 @@ export const products: Product[] = [
   {
     id: 'p58',
     slug: 'custom-detachable-buckle-lanyards-with-safety-breakaway',
+    image: lanyardDetachableBuckle,
     name: 'Custom Detachable Buckle Lanyards with Safety Breakaway',
     category: 'Promotional Items',
     type: 'Lanyards',
@@ -1104,6 +1220,7 @@ export const products: Product[] = [
   {
     id: 'p59',
     slug: 'premium-full-color-sublimated-custom-lanyards',
+    image: lanyardFullColorSublimated,
     name: 'Premium Full-Color Sublimated Custom Lanyards',
     category: 'Promotional Items',
     type: 'Lanyards',
@@ -1127,6 +1244,7 @@ export const products: Product[] = [
   {
     id: 'p60',
     slug: 'elite-series-custom-branding-lanyard',
+    image: lanyardEliteSeries,
     name: 'Elite Series Custom Branding Lanyard',
     category: 'Promotional Items',
     type: 'Lanyards',

@@ -11,7 +11,7 @@ export function CollectionCard({ product }: CollectionCardProps) {
   return (
     <Link to={`/products/${product.slug}`} className={styles.card}>
       <span className={styles.media}>
-        <img src={categoryImages[product.category]} alt={product.name} loading="lazy" />
+        <img src={product.image ?? categoryImages[product.category]} alt={product.name} loading="lazy" />
       </span>
       <span className={styles.rating} aria-hidden="true">
         {'★★★★★'}

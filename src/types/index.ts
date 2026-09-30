@@ -11,6 +11,8 @@ export interface Product {
   type: string;
   description: string;
   monogram: string;
+  /** Product-specific photo; falls back to the category image when absent. */
+  image?: string;
   bestseller?: boolean;
   signature?: boolean;
   /** Short subheading shown above the detail copy on the product page. */
