@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom';
 import { products } from '../data/products';
 import { productCategories } from '../data/navigation';
 import { PageIntro } from '../components/sections/PageIntro';
+import heroVisual from '../assets/hero_section_logo2.png';
 import { Select } from '../components/ui/Field';
 import { SearchBar } from '../components/ui/SearchBar';
 import { ProductGrid } from '../components/ui/ProductGrid';
@@ -40,6 +41,7 @@ export default function Products() {
         eyebrow="Shop the catalog"
         title="Products"
         description="Browse embroidered patches, transfers, stickers, bags, keychains, and promotional goods — filter by category or search for exactly what you need."
+        visualImage={heroVisual}
       />
       <div className={styles.controlsBar}>
         <div className="page-container">

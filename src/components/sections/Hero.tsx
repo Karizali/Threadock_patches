@@ -2,9 +2,8 @@ import type { CSSProperties, ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../ui/Button';
 import { TickerBar } from '../ui/TickerBar';
+import defaultVisualImage from '../../assets/hero_section_logo1.png';
 import styles from './Hero.module.css';
-
-const defaultChips = ['EP', 'DT', 'KC', 'WP', 'PB', 'CH'];
 
 interface HeroProps {
   eyebrow?: string;
@@ -12,7 +11,7 @@ interface HeroProps {
   description?: string;
   cta?: ReactNode;
   backgroundImage?: string;
-  chips?: string[];
+  visualImage?: string;
 }
 
 const defaultActions = (
@@ -32,7 +31,7 @@ export function Hero({
   description = 'From embroidered patches to full apparel runs, we take your artwork from proof to production without the back-and-forth.',
   cta = defaultActions,
   backgroundImage,
-  chips = defaultChips,
+  visualImage = defaultVisualImage,
 }: HeroProps) {
   const style = backgroundImage ? ({ '--hero-image': `url(${backgroundImage})` } as CSSProperties) : undefined;
 
@@ -47,11 +46,7 @@ export function Hero({
             {cta && <div className={styles.ctaRow}>{cta}</div>}
           </div>
           <div className={styles.visual} aria-hidden="true">
-            {chips.map((chip) => (
-              <div className={styles.visualChip} key={chip}>
-                {chip}
-              </div>
-            ))}
+            <img className={styles.visualImage} src={visualImage} alt="" loading="lazy" />
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import { RequestForm } from '../components/forms/RequestForm';
 import { PageIntro } from '../components/sections/PageIntro';
 import { CustomerSatisfactionBanner } from '../components/sections/CustomerSatisfactionBanner';
 import { PatchQualityShowcase } from '../components/sections/PatchQualityShowcase';
+import heroVisual from '../assets/hero_section_logo5.png';
 import styles from './Contact.module.css';
 
 export default function Contact() {
@@ -11,6 +12,7 @@ export default function Contact() {
         eyebrow="Get in touch"
         title="Contact us"
         description="Questions, custom product ideas, or quote requests: our team is ready to help."
+        visualImage={heroVisual}
       />
       <section className={styles.contactSection}>
         <div className={`page-container ${styles.container}`}>

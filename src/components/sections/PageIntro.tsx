@@ -7,10 +7,10 @@ interface PageIntroProps {
   description: string;
   cta?: ReactNode;
   backgroundImage?: string;
-  chips?: string[];
+  visualImage?: string;
 }
 
-export function PageIntro({ eyebrow, title, description, cta, backgroundImage, chips }: PageIntroProps) {
+export function PageIntro({ eyebrow, title, description, cta, backgroundImage, visualImage }: PageIntroProps) {
   return (
     <Hero
       eyebrow={eyebrow}
@@ -18,7 +18,7 @@ export function PageIntro({ eyebrow, title, description, cta, backgroundImage, c
       description={description}
       cta={cta}
       backgroundImage={backgroundImage}
-      chips={chips}
+      visualImage={visualImage}
     />
   );
 }

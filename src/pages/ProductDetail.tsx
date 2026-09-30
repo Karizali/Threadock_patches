@@ -5,7 +5,6 @@ import { ProductSwatch } from '../components/ui/ProductSwatch';
 import { ProductGrid } from '../components/ui/ProductGrid';
 import { Badge } from '../components/ui/Badge';
 import { Button } from '../components/ui/Button';
-import { PageIntro } from '../components/sections/PageIntro';
 import styles from './ProductDetail.module.css';
 
 export default function ProductDetail() {
@@ -20,23 +19,14 @@ export default function ProductDetail() {
 
   return (
     <>
-      <PageIntro
-        eyebrow={product.category}
-        title={product.name}
-        description={product.description}
-        cta={
-          <>
-            <Link to="/contact"><Button variant="primary">Request a quote</Button></Link>
-            <Link to="/products"><Button variant="secondary">Browse products</Button></Link>
-          </>
-        }
-      />
       <div className={styles.body}>
         <div className="page-container">
           <div className={styles.productOverview}>
             <ProductSwatch product={product} size="lg" />
 
             <div className={styles.info}>
+              <span className={`${styles.eyebrow} text-micro`}>{product.category}</span>
+
               <h2 className={`${styles.name} text-h2`}>{product.name}</h2>
 
               <div className={styles.badges}>
@@ -45,6 +35,8 @@ export default function ProductDetail() {
               </div>
 
               {product.tagline && <p className={`${styles.tagline} text-h4`}>{product.tagline}</p>}
+
+              <p className={`${styles.paragraph} text-body-lg`}>{product.description}</p>
 
               {product.detail?.map((paragraph, index) => (
                 <p className={`${styles.paragraph} text-body-lg`} key={index}>
@@ -61,6 +53,11 @@ export default function ProductDetail() {
                   ))}
                 </ul>
               )}
+
+              <div className={styles.cta}>
+                <Link to="/contact"><Button variant="primary">Request a quote</Button></Link>
+                <Link to="/products"><Button variant="secondary">Browse products</Button></Link>
+              </div>
             </div>
           </div>
 

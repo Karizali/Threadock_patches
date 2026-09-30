@@ -15,7 +15,6 @@ export default function ProductCategory() {
   }
 
   const categoryProducts = products.filter((p) => p.category === content.category);
-  const chips = Array.from(new Set(categoryProducts.map((p) => p.monogram))).slice(0, 6);
 
   return (
     <>
@@ -24,7 +23,6 @@ export default function ProductCategory() {
         title={content.hero.title}
         description={content.hero.description}
         backgroundImage={content.heroImage}
-        chips={chips.length > 0 ? chips : undefined}
         cta={
           <>
             <Link to="/contact">

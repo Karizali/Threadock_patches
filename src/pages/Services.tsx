@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { PageIntro } from '../components/sections/PageIntro';
 import { DigitizingRequestForm } from '../components/sections/DigitizingRequestForm';
 import { Button } from '../components/ui/Button';
+import heroVisual from '../assets/hero_section_logo3.png';
 import styles from './Services.module.css';
 
 const services = [
@@ -30,6 +31,7 @@ export default function Services() {
         eyebrow="What we offer"
         title="Services"
         description="Two services that make every other product possible: getting your artwork production-ready."
+        visualImage={heroVisual}
         cta={
           <Link to="/contact">
             <Button variant="primary">Request a quote</Button>

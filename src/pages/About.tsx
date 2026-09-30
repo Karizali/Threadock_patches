@@ -2,6 +2,7 @@ import { PageIntro } from '../components/sections/PageIntro';
 import { CherishedCustomers } from '../components/sections/CherishedCustomers';
 import { CoreValues } from '../components/sections/CoreValues';
 import { QualityGuaranteeBanner } from '../components/sections/QualityGuaranteeBanner';
+import heroVisual from '../assets/hero_section_logo4.png';
 import styles from './About.module.css';
 
 const stats = [
@@ -18,6 +19,7 @@ export default function About() {
         eyebrow="Our story"
         title="About threadock"
         description="We started as a small embroidery shop and grew into a full custom-goods partner for teams, brands, and independent shops that need reliable reorders."
+        visualImage={heroVisual}
       />
       <div className="page-container">
         <div className={styles.stats}>
