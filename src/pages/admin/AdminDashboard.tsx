@@ -6,6 +6,7 @@ import {
   type FormSubmission,
   type ServiceSubmission,
 } from '../../lib/submissions';
+import threadockLogo from '../../assets/threadock_logo_nobg.png';
 import styles from './Admin.module.css';
 
 function formatTimestamp(createdAt: FormSubmission['createdAt']) {
@@ -55,7 +56,9 @@ export default function AdminDashboard() {
     <div className={styles.dashboard}>
       <header className={styles.dashboardHeader}>
         <div>
-          <span className={styles.authEyebrow}>threadock admin</span>
+          <span className={styles.authEyebrow}>
+            <img src={threadockLogo} alt="Threadock" className={styles.authEyebrowLogo} /> admin
+          </span>
           <h1 className={styles.dashboardTitle}>Form submissions</h1>
         </div>
         <div className={styles.dashboardHeaderActions}>

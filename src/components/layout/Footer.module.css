@@ -31,10 +31,10 @@
   }
 }
 
-.brand {
-  font-size: var(--font-size-2xl);
-  font-weight: var(--font-weight-black);
-  color: var(--color-text-on-dark);
+.brandLogo {
+  height: 48px;
+  width: auto;
+  display: block;
 }
 
 .description {

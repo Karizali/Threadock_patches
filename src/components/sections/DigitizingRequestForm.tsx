@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react';
 import { SectionHeading } from './SectionHeading';
 import { submitServiceRequest } from '../../lib/submissions';
+import formSideImg from '../../assets/service-page-form-sideimg.jpg';
 import styles from './DigitizingRequestForm.module.css';
 
 type RequestType = 'digitizing' | 'vector';
@@ -164,10 +165,9 @@ export function DigitizingRequestForm() {
           </div>
 
           <div className={styles.info}>
-            <span className={styles.badge} aria-hidden="true">
-              TD
-            </span>
-            <p className={`${styles.copy} text-body`}>
+            <img src={formSideImg} alt="" className={styles.infoImage} loading="lazy" />
+            <div className={styles.infoOverlay} aria-hidden="true" />
+            <p className={`${styles.copy}`}>
               Custom patches are a simple way to add identity, branding, and personality to clothing, uniforms, bags,
               hats, and accessories. Whether you need embroidered, woven, PVC, or printed patches, each design can be
               customized with your preferred size, shape, colors, backing, and border style to match your brand or

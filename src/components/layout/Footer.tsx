@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { productCategories } from '../../data/navigation';
 import { categorySlug } from '../../data/categoryContent';
 import { FacebookIcon, InstagramIcon, MastercardIcon, PaypalIcon, PinterestIcon, VisaIcon } from './BrandIcons';
+import threadockLogo from '../../assets/threadock_logo_nobg.png';
 import styles from './Footer.module.css';
 
 const quickLinks = [
@@ -17,7 +18,7 @@ export function Footer() {
       <div className="page-container">
         <div className={styles.grid}>
           <div>
-            <span className={styles.brand}>threadock</span>
+            <img src={threadockLogo} alt="Threadock" className={styles.brandLogo} />
             <p className={styles.description}>
               Custom patches, transfers, and promotional products built for teams, brands, and shops that reorder
               every season.

@@ -3,12 +3,14 @@ import { PageIntro } from '../components/sections/PageIntro';
 import { DigitizingRequestForm } from '../components/sections/DigitizingRequestForm';
 import { Button } from '../components/ui/Button';
 import heroVisual from '../assets/hero_section_logo3.png';
+import vectorArtSymbol from '../assets/vector-art-symbol.jpg';
+import digitizingSymbol from '../assets/digitizing-symbol.jpg';
 import styles from './Services.module.css';
 
 const services = [
   {
     id: 'vector-art',
-    icon: 'VA',
+    image: vectorArtSymbol,
     name: 'Vector art',
     description:
       'Send a photo, sketch, or low-resolution logo and our artists redraw it as clean, scalable vector art ready for any production method.',
@@ -16,7 +18,7 @@ const services = [
   },
   {
     id: 'digitizing',
-    icon: 'DG',
+    image: digitizingSymbol,
     name: 'Digitizing',
     description:
       'We convert your artwork into an embroidery-ready stitch file, mapping thread density, direction, and color breaks by hand.',
@@ -42,9 +44,10 @@ export default function Services() {
         <div className={styles.grid}>
           {services.map((service) => (
             <div className={styles.card} key={service.id}>
-              <span className={styles.icon} aria-hidden="true">
-                {service.icon}
-              </span>
+              <div className={styles.cardMedia}>
+                <img src={service.image} alt="" className={styles.cardImage} loading="lazy" />
+              </div>
+            
               <h2 className={`${styles.name} text-h3`}>{service.name}</h2>
               <p className={`${styles.description} text-body`}>{service.description}</p>
               <ul className={styles.list}>

@@ -10,7 +10,7 @@
   align-items: center;
   gap: var(--space-block);
   min-height: var(--header-height);
-  padding: 0 var(--space-block);
+  padding: 15px var(--space-block);
   background: color-mix(in srgb, var(--color-surface-base) 38%, transparent);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
@@ -22,28 +22,18 @@
 
 .logo {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   line-height: 1.2;
   white-space: nowrap;
 }
 
-.logoText {
-  font-size: var(--font-size-2xl);
-  font-weight: var(--font-weight-black);
-  color: var(--color-text-on-dark);
+.logoImg {
+  height: 80px;
+  width: auto;
+  display: block;
+  margin-block: -8px;
 }
 
-.logoAccent {
-  color: var(--color-text-inverse);
-}
-
-.logoTagline {
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-medium);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-text-tertiary);
-}
 
 .nav {
   display: flex;
@@ -75,8 +65,8 @@
   top: 100%;
   left: 0;
   margin-top: var(--space-5);
-  background: var(--color-surface-raised);
-  border-radius: var(--radius-md);
+  background: #001737;
+  border-radius: 2px;
   box-shadow: var(--shadow-2);
   padding: var(--space-6);
   display: flex;

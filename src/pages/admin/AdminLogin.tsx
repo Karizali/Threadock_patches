@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react';
 import { Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/auth-context';
+import threadockLogo from '../../assets/threadock_logo_nobg.png';
 import styles from './Admin.module.css';
 
 export default function AdminLogin() {
@@ -34,7 +35,9 @@ export default function AdminLogin() {
   return (
     <div className={styles.authScreen}>
       <form className={styles.authCard} onSubmit={handleSubmit}>
-        <span className={styles.authEyebrow}>threadock admin</span>
+        <span className={styles.authEyebrow}>
+          <img src={threadockLogo} alt="Threadock" className={styles.authEyebrowLogo} /> admin
+        </span>
         <h1 className={styles.authTitle}>Sign in</h1>
         <label className={styles.authField}>
           <span>Email</span>

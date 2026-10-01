@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { primaryNav, productCategories } from '../../data/navigation';
 import { categorySlug } from '../../data/categoryContent';
+import threadockLogo from '../../assets/threadock_logo_nobg.png';
 import styles from './Header.module.css';
 
 export function Header() {
@@ -12,10 +13,7 @@ export function Header() {
       <div className="page-container">
         <div className={styles.bar}>
           <Link to="/" className={styles.logo}>
-            <span className={styles.logoText}>
-              thread<span className={styles.logoAccent}>ock</span>
-            </span>
-            {/* <span className={styles.logoTagline}>Custom Patches &amp; Promo Goods</span> */}
+            <img src={threadockLogo} alt="Threadock" className={styles.logoImg} />
           </Link>
 
           <button
