@@ -24,14 +24,9 @@ export default function ProductCategory() {
         description={content.hero.description}
         backgroundImage={content.heroImage}
         cta={
-          <>
-            <Link to="/contact">
-              <Button variant="primary">Request a quote</Button>
-            </Link>
-            <Link to="/products">
-              <Button variant="secondary">Browse all products</Button>
-            </Link>
-          </>
+          <Link to="/products">
+            <Button variant="secondary">Browse all products</Button>
+          </Link>
         }
       />
       <div className={styles.body}>

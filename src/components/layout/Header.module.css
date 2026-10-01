@@ -143,19 +143,67 @@
 }
 
 @media (max-width: 900px) {
+  .header :global(.page-container) {
+    padding-inline: var(--space-6);
+  }
+
+  .bar {
+    padding: var(--space-6);
+    border-radius: 0 0 var(--radius-md, 12px) var(--radius-md, 12px);
+  }
+
+  .logoImg {
+    height: 48px;
+    margin-block: 0;
+  }
+
   .nav,
   .contact {
     display: none;
   }
+
   .menuToggle {
     display: inline-flex;
+    margin-left: auto;
   }
+
   .navOpen {
     display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex: none;
     flex-direction: column;
-    align-items: flex-start;
-    gap: var(--space-6);
-    padding-block: var(--space-block);
+    align-items: stretch;
+    gap: 0;
+    padding: var(--space-6);
+    background: #001737;
     border-top: 1px solid var(--color-border-default);
+    border-radius: 0 0 var(--radius-md, 12px) var(--radius-md, 12px);
+    box-shadow: var(--shadow-2);
+  }
+
+  .navOpen .navLink {
+    width: 100%;
+    padding: var(--space-6) 0;
+  }
+
+  .navGroup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navOpen .dropdown {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    background: transparent;
+    padding: 0 0 var(--space-5) var(--space-6);
+    margin-top: 0;
+    min-width: 0;
   }
 }

@@ -104,3 +104,11 @@
   --hero-image: url('../assets/hero_image.webp');
   --footer-image: url('../assets/footer_image.jpg');
 }
+
+/* Scale down large marketing headings on mobile */
+@media (max-width: 720px) {
+  :root {
+    --font-size-hero: 34px;
+    --font-size-h1: 28px;
+  }
+}

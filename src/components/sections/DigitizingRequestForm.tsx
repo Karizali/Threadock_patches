@@ -52,7 +52,7 @@ export function DigitizingRequestForm() {
 
   return (
     <section className="section" id="digitizing-request">
-      <div className="page-container">
+      <div className={`page-container ${styles.container}`}>
         <SectionHeading eyebrow="Get started" title="Request digitizing or vector art" onLight={false} />
         <div className={styles.layout}>
           <div className={styles.panel}>

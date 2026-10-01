@@ -12,6 +12,12 @@
   }
 }
 
+@media (max-width: 720px) {
+  .container {
+    padding-inline: 0;
+  }
+}
+
 .panel {
   background-image: radial-gradient(
       120% 140% at 30% 0%,
