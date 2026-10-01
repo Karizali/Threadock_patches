@@ -31,6 +31,7 @@ export interface Testimonial {
   role: string;
   quote: string;
   initials: string;
+  avatar: string;
   rating: number;
 }
 

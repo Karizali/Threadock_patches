@@ -42,7 +42,7 @@
 .value {
   color: var(--color-on-accent);
   font-size: var(--font-size-hero);
-  font-weight: var(--font-weight-black);
+  font-weight: var(--font-weight-semibold);
   line-height: 1;
 }
 

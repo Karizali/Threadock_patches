@@ -34,13 +34,7 @@
   width: 40px;
   height: 40px;
   border-radius: 999px;
-  background: var(--color-surface-strong);
-  color: var(--color-on-accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: var(--font-weight-black);
-  font-size: var(--font-size-sm);
+  object-fit: cover;
   flex-shrink: 0;
 }
 

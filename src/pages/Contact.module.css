@@ -30,7 +30,7 @@
   max-width: 100%;
   color: #f7f8fb;
   font-size: 48px;
-  font-weight: var(--font-weight-black);
+  font-weight: var(--font-weight-semibold);
   line-height: 1.15;
 }
 

@@ -46,7 +46,7 @@
 .navLink {
   position: relative;
   font-size: var(--font-size-md);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
   color: var(--color-text-on-dark);
   padding: var(--space-5) 0;
 }
@@ -84,6 +84,13 @@
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+.navGroup.suppressDropdown:hover .dropdown,
+.navGroup.suppressDropdown:focus-within .dropdown {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
 }
 
 .dropdownLink {

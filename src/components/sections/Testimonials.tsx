@@ -16,9 +16,7 @@ export function Testimonials() {
               </span>
               <p className={styles.quote}>&ldquo;{testimonial.quote}&rdquo;</p>
               <div className={styles.person}>
-                <span className={styles.avatar} aria-hidden="true">
-                  {testimonial.initials}
-                </span>
+                <img className={styles.avatar} src={testimonial.avatar} alt={testimonial.name} loading="lazy" />
                 <div>
                   <div className={styles.name}>{testimonial.name}</div>
                   <div className={styles.role}>{testimonial.role}</div>

@@ -7,6 +7,7 @@ import styles from './Header.module.css';
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [suppressDropdown, setSuppressDropdown] = useState(false);
 
   return (
     <header className={styles.header}>
@@ -33,7 +34,11 @@ export function Header() {
           <nav className={`${styles.nav} ${mobileOpen ? styles.navOpen : ''}`} id="primary-nav">
             {primaryNav.map((item) =>
               item.label === 'Products' ? (
-                <div className={styles.navGroup} key={item.path}>
+                <div
+                  className={`${styles.navGroup} ${suppressDropdown ? styles.suppressDropdown : ''}`}
+                  key={item.path}
+                  onMouseLeave={() => setSuppressDropdown(false)}
+                >
                   <NavLink
                     to={item.path}
                     className={({ isActive }) => `${styles.navLink} ${isActive ? styles.navLinkActive : ''}`}
@@ -46,7 +51,11 @@ export function Header() {
                         key={category}
                         to={`/products/category/${categorySlug(category)}`}
                         className={styles.dropdownLink}
-                        onClick={() => setMobileOpen(false)}
+                        onClick={(e) => {
+                          setMobileOpen(false);
+                          setSuppressDropdown(true);
+                          e.currentTarget.blur();
+                        }}
                       >
                         {category}
                       </Link>
