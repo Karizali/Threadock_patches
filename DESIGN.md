@@ -1,11 +1,11 @@
-# artsinstitches
+# threadock
 
 ## Mission
-Create implementation-ready, token-driven UI guidance for artsinstitches that is optimized for consistency, accessibility, and fast delivery across dashboard web app.
+Create implementation-ready, token-driven UI guidance for threadock that is optimized for consistency, accessibility, and fast delivery across dashboard web app.
 
 ## Brand
-- Product/brand: artsinstitches
-- URL: https://artsinstitches.com/
+- Product/brand: threadock
+- URL: https://threadock.com/
 - Audience: authenticated users and operators
 - Product surface: dashboard web app
 
