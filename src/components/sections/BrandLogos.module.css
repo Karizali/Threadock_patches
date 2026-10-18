@@ -1,3 +1,6 @@
+.maincontainer{
+  padding-bottom: 25px;
+}
 .marquee {
   overflow: hidden;
   -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);

@@ -1,10 +1,12 @@
 :root {
   /* ---- Color: brand anchors ---- */
+  /* --color-navy: #004bb5; */
   --color-navy: #004bb5;
   --color-gray: #d6d6d6;
 
   /* ---- Color: surface elevation (darkest -> brightest) ---- */
-  --color-surface-base: color-mix(in srgb, var(--color-navy) 22%, black);
+  /* --color-surface-base: color-mix(in srgb, var(--color-navy) 22%, black); */
+  --color-surface-base: color-mix(in srgb, var(--color-navy) 38%, rgb(0, 0, 0));
   --color-surface-card: color-mix(in srgb, var(--color-navy) 50%, black);
   --color-surface-raised: var(--color-navy);
   --color-surface-strong: color-mix(in srgb, var(--color-navy) 60%, white);

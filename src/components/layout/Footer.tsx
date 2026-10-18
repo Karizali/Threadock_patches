@@ -68,10 +68,7 @@ export function Footer() {
                 <span>orders@threadock.com</span>
               </li>
               <li>
-                <span>Wilmington, Delaware, USA</span>
-              </li>
-              <li>
-                <span>Karachi, Pakistan</span>
+                <span>Wearhouse & office address: A8 block 10A, gulshan e iqbal 75300 Karachi, Pakistan</span>
               </li>
             </ul>
           </div>

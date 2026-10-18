@@ -6,7 +6,7 @@ const loopLogos = Array.from({ length: 4 }, () => brandLogos).flat();
 
 export function BrandLogos() {
   return (
-    <section className="section-tight">
+    <section className={styles.maincontainer}>
       <div className={styles.marquee}>
         <div className={styles.track}>
           {[0, 1].map((group) => (
